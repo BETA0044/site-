@@ -1,0 +1,28 @@
+{
+  "name": "M3 Agência ADS - Marketing Digital que Gera Resultados",
+  "short_name": "M3 Agência",
+  "description": "Especialistas em marketing digital, gestão de tráfego pago e campanhas que geram resultados reais para seu negócio.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#0066FF",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "marketing", "advertising"],
+  "lang": "pt-BR",
+  "scope": "/",
+  "dir": "ltr"
+}

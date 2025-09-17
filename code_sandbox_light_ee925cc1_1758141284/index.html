@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M3 Agência ADS - Marketing Digital que Gera Resultados</title>
+    <meta name="description" content="M3 Agência ADS - Especialistas em marketing digital, gestão de tráfego pago e campanhas que geram resultados reais para seu negócio.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Firebase SDKs -->
+    <script type="module" src="js/firebase-config.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="loader-inner">
+                <h2>M3</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h3>M3 <span>AGÊNCIA</span></h3>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#services" class="nav-link">Serviços</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#portfolio" class="nav-link">Portfólio</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-particles"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text" data-aos="fade-up" data-aos-delay="200">
+                    <h1>Marketing Digital que <span class="highlight">Gera Resultados</span></h1>
+                    <p>Transformamos sua presença digital em vendas reais. Especialistas em tráfego pago, gestão de campanhas e estratégias que fazem seu negócio crescer exponencialmente.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            Quero Crescer Agora
+                        </a>
+                        <a href="#services" class="btn btn-secondary">
+                            <i class="fas fa-play"></i>
+                            Conheça Nossos Serviços
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat">
+                        <h3>+200</h3>
+                        <p>Clientes Atendidos</p>
+                    </div>
+                    <div class="stat">
+                        <h3>+5M</h3>
+                        <p>Faturamento Gerado</p>
+                    </div>
+                    <div class="stat">
+                        <h3>300%</h3>
+                        <p>ROI Médio</p>
+                    </div>
+                    <div class="stat">
+                        <h3>24/7</h3>
+                        <p>Suporte Especializado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#services">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Nossos <span>Serviços</span></h2>
+                <p>Soluções completas em marketing digital para impulsionar seu negócio</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <h3>Google Ads</h3>
+                    <p>Campanhas otimizadas no Google para atrair clientes qualificados e aumentar suas vendas com o melhor ROI do mercado.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Pesquisa de palavras-chave</li>
+                        <li><i class="fas fa-check"></i> Otimização de campanhas</li>
+                        <li><i class="fas fa-check"></i> Landing pages otimizadas</li>
+                        <li><i class="fas fa-check"></i> Relatórios detalhados</li>
+                    </ul>
+                </div>
+                <div class="service-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-badge">Mais Popular</div>
+                    <div class="service-icon">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <h3>Facebook & Instagram Ads</h3>
+                    <p>Domine as redes sociais com campanhas segmentadas que convertem visitantes em clientes fiéis e engajados.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Segmentação avançada</li>
+                        <li><i class="fas fa-check"></i> Criativos profissionais</li>
+                        <li><i class="fas fa-check"></i> Funil de vendas completo</li>
+                        <li><i class="fas fa-check"></i> Gestão de comunidade</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics & Relatórios</h3>
+                    <p>Acompanhe cada investimento com relatórios detalhados e insights estratégicos para otimizar seus resultados.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Dashboard personalizado</li>
+                        <li><i class="fas fa-check"></i> Métricas em tempo real</li>
+                        <li><i class="fas fa-check"></i> Análise de conversões</li>
+                        <li><i class="fas fa-check"></i> Insights estratégicos</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Estratégia Digital</h3>
+                    <p>Planejamento estratégico completo para posicionar sua marca no mercado digital de forma assertiva e competitiva.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Análise de concorrência</li>
+                        <li><i class="fas fa-check"></i> Persona e públicos</li>
+                        <li><i class="fas fa-check"></i> Funil de marketing</li>
+                        <li><i class="fas fa-check"></i> Planejamento de conteúdo</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Landing Pages</h3>
+                    <p>Páginas de alta conversão desenvolvidas com foco na experiência do usuário e otimizadas para gerar mais leads.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Design responsivo</li>
+                        <li><i class="fas fa-check"></i> Otimização de conversão</li>
+                        <li><i class="fas fa-check"></i> Testes A/B</li>
+                        <li><i class="fas fa-check"></i> Integração com CRM</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Consultoria Especializada</h3>
+                    <p>Consultoria personalizada para empresas que buscam crescimento acelerado e resultados excepcionais no digital.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Auditoria completa</li>
+                        <li><i class="fas fa-check"></i> Plano de ação</li>
+                        <li><i class="fas fa-check"></i> Acompanhamento mensal</li>
+                        <li><i class="fas fa-check"></i> Suporte prioritário</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h2>Sobre a <span>M3 Agência</span></h2>
+                    <p class="lead">Com mais de 20 anos de experiência em gestão e marketing, a M3 Agência nasceu da necessidade de oferecer soluções digitais realmente efetivas para empresas que querem crescer.</p>
+                    <p>Nossa missão é transformar o investimento em marketing digital dos nossos clientes em resultados concretos e mensuráveis. Utilizamos metodologias comprovadas, tecnologias de ponta e uma equipe altamente especializada para garantir o melhor ROI do mercado.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-trophy"></i>
+                            <div>
+                                <h4>Experiência Comprovada</h4>
+                                <p>Mais de 2 décadas atuando no mercado com resultados excepcionais</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-target"></i>
+                            <div>
+                                <h4>Foco em Resultados</h4>
+                                <p>Cada estratégia é desenvolvida pensando no ROI e crescimento sustentável</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-handshake"></i>
+                            <div>
+                                <h4>Parceria Verdadeira</h4>
+                                <p>Trabalhamos como uma extensão da sua equipe, comprometidos com seu sucesso</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-calendar"></i>
+                        Agendar Consultoria Gratuita
+                    </a>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <div class="image-container">
+                        <div class="image-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                            <p>Gráfico de Crescimento<br>dos Nossos Clientes</p>
+                        </div>
+                        <div class="floating-stats">
+                            <div class="floating-stat">
+                                <h4>+300%</h4>
+                                <p>Crescimento Médio</p>
+                            </div>
+                            <div class="floating-stat">
+                                <h4>ROI 5:1</h4>
+                                <p>Retorno Garantido</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Cases de <span>Sucesso</span></h2>
+                <p>Conheça alguns dos nossos projetos que geraram resultados extraordinários</p>
+            </div>
+            
+            <div class="portfolio-filters" data-aos="fade-up" data-aos-delay="200">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="services">Serviços</button>
+                <button class="filter-btn" data-filter="health">Saúde</button>
+                <button class="filter-btn" data-filter="education">Educação</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="health" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Óticas Águia</h3>
+                        <p>Campanha de Black Friday que gerou +400% de aumento nas vendas</p>
+                        <div class="portfolio-stats">
+                            <span>ROI: 600%</span>
+                            <span>Conversões: +250%</span>
+                        </div>
+                        <div class="portfolio-tags">
+                            <span>Facebook Ads</span>
+                            <span>Google Ads</span>
+                            <span>Landing Page</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="ecommerce" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>E-commerce Fashion</h3>
+                        <p>Estratégia completa que aumentou o faturamento em 350% em 6 meses</p>
+                        <div class="portfolio-stats">
+                            <span>ROI: 450%</span>
+                            <span>Vendas: +350%</span>
+                        </div>
+                        <div class="portfolio-tags">
+                            <span>Instagram Ads</span>
+                            <span>Remarketing</span>
+                            <span>Influencers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="services" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Empresa de Serviços B2B</h3>
+                        <p>Geração de leads qualificados com custo 60% menor que a concorrência</p>
+                        <div class="portfolio-stats">
+                            <span>CPL: -60%</span>
+                            <span>Qualidade: +80%</span>
+                        </div>
+                        <div class="portfolio-tags">
+                            <span>LinkedIn Ads</span>
+                            <span>Email Marketing</span>
+                            <span>CRM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="education" data-aos="fade-up" data-aos-delay="400">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Curso Online</h3>
+                        <p>Lançamento que alcançou 10.000 alunos em apenas 30 dias</p>
+                        <div class="portfolio-stats">
+                            <span>Alunos: 10.000</span>
+                            <span>Período: 30 dias</span>
+                        </div>
+                        <div class="portfolio-tags">
+                            <span>YouTube Ads</span>
+                            <span>Funil de Vendas</span>
+                            <span>Webinar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Vamos Conversar <span>Sobre Seu Projeto?</span></h2>
+                <p>Agende uma consultoria gratuita e descubra como podemos multiplicar seus resultados</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>+55 (11) 99999-9999</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>contato@m3agencia.com.br</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+55 (11) 99999-9999</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h4>Instagram</h4>
+                            <p>@m3agenciaads</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-cta">
+                        <h3>Pronto para Decolar?</h3>
+                        <p>Nossa equipe está pronta para transformar seu negócio. Entre em contato agora e descubra como podemos ajudar você a alcançar resultados extraordinários.</p>
+                        <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            Chamar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Nome Completo</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">E-mail</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">Telefone/WhatsApp</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="company" name="company" required>
+                            <label for="company">Empresa</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="google-ads">Google Ads</option>
+                                <option value="facebook-ads">Facebook & Instagram Ads</option>
+                                <option value="analytics">Analytics & Relatórios</option>
+                                <option value="estrategia">Estratégia Digital</option>
+                                <option value="landing-pages">Landing Pages</option>
+                                <option value="consultoria">Consultoria Especializada</option>
+                            </select>
+                            <label for="service">Serviço de Interesse</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <label for="message">Conte-nos sobre seu projeto</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                    
+                    <div id="form-success" class="form-message success" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Mensagem enviada com sucesso! Entraremos em contato em breve.</p>
+                    </div>
+                    
+                    <div id="form-error" class="form-message error" style="display: none;">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p>Erro ao enviar mensagem. Tente novamente ou entre em contato via WhatsApp.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>M3 <span>AGÊNCIA</span></h3>
+                    <p>Marketing Digital que Gera Resultados</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/m3agenciaads" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/5511999999999" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#services">Google Ads</a></li>
+                        <li><a href="#services">Facebook & Instagram Ads</a></li>
+                        <li><a href="#services">Analytics & Relatórios</a></li>
+                        <li><a href="#services">Estratégia Digital</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#portfolio">Cases de Sucesso</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> contato@m3agencia.com.br</p>
+                    <p><i class="fas fa-phone"></i> +55 (11) 99999-9999</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, Brasil</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 M3 Agência ADS. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

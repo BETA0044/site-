@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página não encontrada - M3 Agência ADS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #000000 0%, #333333 100%);
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .error-container {
+            max-width: 600px;
+            padding: 2rem;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #0066FF 0%, #003D99 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .error-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .error-message {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #0066FF 0%, #003D99 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 30px rgba(0, 102, 255, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 60px rgba(0, 102, 255, 0.4);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+        }
+
+        .logo span {
+            color: #0066FF;
+        }
+
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 5rem;
+            }
+
+            .error-title {
+                font-size: 1.5rem;
+            }
+
+            .error-message {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="logo">M3 <span>AGÊNCIA</span></div>
+        <div class="error-code">404</div>
+        <h1 class="error-title">Página não encontrada</h1>
+        <p class="error-message">
+            Ops! A página que você está procurando não existe ou foi removida. 
+            Que tal retornar à nossa página inicial e descobrir como podemos 
+            ajudar seu negócio a crescer?
+        </p>
+        <a href="/" class="btn">
+            <i class="fas fa-home"></i>
+            Voltar ao Início
+        </a>
+    </div>
+
+    <script>
+        // Track 404 errors in Firebase Analytics
+        if (window.firebaseManager) {
+            window.firebaseManager.trackEvent('404_error', {
+                page_location: window.location.href,
+                referrer: document.referrer || 'direct'
+            });
+        }
+    </script>
+</body>
+</html>

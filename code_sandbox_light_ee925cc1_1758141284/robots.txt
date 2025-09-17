@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://m3agencia.com.br/sitemap.xml
+
+# Disallow admin areas (if any in future)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow social media bots
+User-agent: facebookexternalhit/*
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Crawl delay for better performance
+Crawl-delay: 1
